@@ -1,0 +1,41 @@
+{
+  "name": "berkshire-rag",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "mastra dev",
+    "build": "mastra build",
+    "start": "mastra start",
+    "parse": "cross-env NODE_OPTIONS=--no-warnings node --loader ts-node/esm ./src/scripts/processLetters.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^1.3.22",
+    "@mastra/core": "^0.10.8",
+    "@mastra/libsql": "^0.11.0",
+    "@mastra/loggers": "^0.10.2",
+    "@mastra/memory": "^0.11.0",
+    "@mastra/pg": "^0.12.0",
+    "@mastra/rag": "^1.0.1",
+    "dotenv": "^17.0.0",
+    "openai": "^5.8.2",
+    "pdf-parse": "^1.1.1",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.7",
+    "cross-env": "^7.0.3",
+    "mastra": "^0.10.8",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}

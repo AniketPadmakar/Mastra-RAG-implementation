@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ES2022",
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "baseUrl": ".",               
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "strict": true,              
+    "resolveJsonModule": true,  
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src"],
+  "ts-node": {
+    "transpileOnly": true,
+    "esm": true
+  }
+}
